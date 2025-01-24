@@ -88,6 +88,8 @@ a message, it's all my fault!
 
 * [marylou][5]!
 * `attackallmonsters` for their [soft organelle][6].
+* Chris Dixon ([la practica][11]) (testing)
+* Adrian Newton ([Evergreen Music][12]) (testing)
 * Everyone on the [C&G forum][7].
 
 ## References
@@ -103,3 +105,5 @@ a message, it's all my fault!
 [6]: https://patchstorage.com/organelle-ui-for-desktop/
 [7]: https://forum.critterandguitari.com
 [10]: https://github.com/pfig/birbs
+[11]: https://linktr.ee/lapractica
+[12]: https://www.evergreenmusic.uk
