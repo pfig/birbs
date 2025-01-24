@@ -55,10 +55,6 @@ should do it). You can of course feed Birbs any audio.
 - **D**: Stop
 - **E**: Play
 
-TODO
-- **C#**: Render buffer
-- **D#**: Stop render
-
 ### Higer octave keys
 
 - **C to B** (_white_ keys): Pitch shifter
@@ -83,6 +79,11 @@ While I have tried to stay true to the original design, I did do some
 refactoring and may have introduced some bugs. If you find any bug, annoyance,
 or functionality that deviates from marylou's bird translator please send me
 a message, it's all my fault!
+
+### TODO
+
+1. Export sounds
+1. Release desktop version
 
 ## Acknowledgements
 
