@@ -1,5 +1,6 @@
 # Birbs
 
+
 ## Overview
 
 Birbs is an Organelle port of [marylou sharrock][2]'s [bird translator][0].
@@ -14,11 +15,20 @@ Then it dawned on me I have a couple of machines capable of running Pure Data,
 and that I might as well port it to one of those, so I wouldn't need my laptop
 and I would have more direct control over the parameters - and here we are!
 
+
 ## Installation
 
-1. Load the `zop` file onto the SD card or USB drive.
+### Organelle
+
+1. Load the ZIP file onto the SD card or USB drive.
 1. Reload the storage.
 1. Select "Install Birbs.zop"
+
+### Desktop
+
+1. Download the latest release from [patchstorage][13].
+1. Unzip to a location of your choice.
+1. Open `birbs.pd` with Pure Data
 
 ### Dependencies
 
@@ -26,6 +36,10 @@ The bird translator depends on the [ipoke~][4] object, which I have included
 in the installation package. If you don't trust binaries from a random stranger
 on the Internet, you will need to download and compile ipoke~ yourself.
 The resulting `ipoke~.pd_linux` file must be placed in the Birbs folder.
+
+#### Building `ipoke~`
+
+Please follow the [instructions](IPOKE~.md) on how to build and install `ipoke~`.
 
 ### Platform
 
@@ -36,33 +50,69 @@ Unfortunately I am unable to test this on the M or S models, and thus I will be
 unable to help with or fix any issues related to this. If you have an Organelle
 M or S and would like to help testing Birbs, get in touch, please!
 
+
 ## Controls
 
 You will need a microphone capable of working with the Organelle (I use
 Critter & Guitari's Microphone, but any microphone you use with the Organelle
 should do it). You can of course feed Birbs any audio.
 
-### Knobs
+### Organelle
+
+#### Knobs
 
 - **Knob 1**: Speed
 - **Knob 2**: Gap
 - **Knob 3**: Delay
 - **Knob 4**: Feedback
 
-### Lower octave keys
+#### Lower octave keys
 
 - **C**: Recording
 - **D**: Stop
 - **E**: Play
 
-### Higer octave keys
+#### Higer octave keys
 
 - **C to B** (_white_ keys): Pitch shifter
 - **C# to A#** (_black_ keys): Reverb amount
 
+### Desktop
+
+#### Keyboard and sliders
+
+- **z**: Record
+- **x**: Stop
+- **c**: Play
+
+Use the sliders on the patch to control the different parameters.
+
+#### MIDI controller
+
+The patch is listening on all MIDI channels.
+I have included [a template for the Novation LaunchControl](birbs.syx).
+
+##### Buttons
+
+- **CC 9**: Record
+- **CC 10**: Stop
+- **CC 11**: Play
+
+##### Knobs
+
+- **CC 21**: Speed
+- **CC 22**: Gap
+- **CC 23**: Delay
+- **CC 24**: Feedback
+- **CC 25**: Reverb
+- **CC 26**: Pitch shifter
+- **CC 48**: Volume
+
+
 ## Code
 
 This project is maintained on [GitHub][10].
+
 
 ## Closing remarks
 
@@ -83,7 +133,7 @@ a message, it's all my fault!
 ### TODO
 
 1. Export sounds
-1. Release desktop version
+
 
 ## Acknowledgements
 
@@ -92,6 +142,7 @@ a message, it's all my fault!
 * Chris Dixon ([la practica][11]) (testing)
 * Adrian Newton ([Evergreen Music][12]) (testing)
 * Everyone on the [C&G forum][7].
+
 
 ## References
 
@@ -108,3 +159,4 @@ a message, it's all my fault!
 [10]: https://github.com/pfig/birbs
 [11]: https://linktr.ee/lapractica
 [12]: https://www.evergreenmusic.uk
+[13]: https://patchstorage.com/TODO
