@@ -1,0 +1,13 @@
+Birbs/IPOKE~.md
+Birbs/LICENSE.txt
+Birbs/README.md
+Birbs/VERSION.txt
+Birbs/birb-pitch-shifter.pd
+Birbs/birb-pointer.pd
+Birbs/birb-poke~.pd
+Birbs/birb-voice.pd
+Birbs/build-ipoke.sh
+Birbs/compressor~.pd
+Birbs/ipoke~.patch
+Birbs/ipoke~.pd_linux
+Birbs/main.pd
