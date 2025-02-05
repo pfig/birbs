@@ -28,6 +28,7 @@ and I would have more direct control over the parameters - and here we are!
 
 1. Download the latest release from [patchstorage][13].
 1. Unzip to a location of your choice.
+1. Build the external by running `./build-ipoke.sh`.
 1. Open `birbs.pd` with Pure Data
 
 ### Dependencies
@@ -132,7 +133,9 @@ a message, it's all my fault!
 
 ### TODO
 
-1. Export sounds
+1. Update patch to match the live box in the museum.
+1. Export sounds.
+1. Improve desktop UI.
 
 
 ## Acknowledgements
