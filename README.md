@@ -22,7 +22,11 @@ and I would have more direct control over the parameters - and here we are!
 
 1. Load the ZIP file onto the SD card or USB drive.
 1. Reload the storage.
-1. Select "Install Birbs.zop"
+1. Select "Install birbs-x.x.x-organelle.zip"
+
+**N.B.**: The 1.5.1 update changes the patch name to `birbs` (note it is now
+          lowercase). You will need to delete the `Birbs` folder once you are
+          happy with the new version.
 
 ### Desktop
 
@@ -33,10 +37,31 @@ and I would have more direct control over the parameters - and here we are!
 
 ### Dependencies
 
-The bird translator depends on the [ipoke~][4] object, which I have included
-in the installation package. If you don't trust binaries from a random stranger
-on the Internet, you will need to download and compile ipoke~ yourself.
-The resulting `ipoke~.pd_linux` file must be placed in the Birbs folder.
+The bird translator depends on the [ipoke~][4] external, which I have included
+in the Organelle installation package. If you don't trust binaries from a
+random stranger on the Internet, you will need to download and compile ipoke~
+yourself.
+
+#### Organelle
+
+If you are comfortable working on the Organelle, you could download
+the `ipoke~` [ZIP package][15] into the birbs directory and run
+
+``` shell
+./build-ipoke.sh ipoke_v.3_test1.zip
+```
+
+The resulting `ipoke~.pd_linux` file must be placed in the `birbs` folder (the
+script does this for you).
+
+There are two options to work on the Organelle, [a display and keyboard][16]
+or [remote access][17].
+
+#### Desktop
+
+There is no binary included in the desktop package, you will always need to
+compile `ipoke~` - see the [instructions](IPOKE~.md), please.
+
 
 #### Building `ipoke~`
 
@@ -162,4 +187,8 @@ a message, it's all my fault!
 [10]: https://github.com/pfig/birbs
 [11]: https://linktr.ee/lapractica
 [12]: https://www.evergreenmusic.uk
-[13]: https://patchstorage.com/TODO
+[13]: https://patchstorage.com/birds-2/
+[14]: https://patchstorage.com/TODO
+[15]: https://puredata.info/Members/ipoke/ipoke_v.3_test1.zip/at_download/file
+[16]: https://www.critterandguitari.com/manual?m=Organelle_M_Manual#6.2_Operating_the_Organelle_as_a_Computer
+[17]: https://www.critterandguitari.com/manual?m=Organelle_M_Manual#7.2_Editing_Patches_Remotely
